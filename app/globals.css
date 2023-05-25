@@ -16,12 +16,43 @@
   }
 }
 
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ 
+}
+.hero-haze{
+  background-image: url(/hero-bg.png);
+  background-position: 100% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#donation-go{
+  background-image: url(/section2-01buttom1.png);
+  background-position: 100% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.every-ringgit{
+  background-image: url(/section31.png);
+  background-position: 10% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#magic{
+  background-image: url(/grain.png);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+#magic::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }

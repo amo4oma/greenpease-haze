@@ -1,10 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  fontFamily: {
+    'noto': ['"Noto Sans"', 'sans-serif'],
+ 
+  },
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  screens: {
+    xs: "450px",
+  },
   theme: {
     extend: {
       backgroundImage: {
