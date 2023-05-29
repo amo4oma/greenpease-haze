@@ -102,7 +102,7 @@ export default function Home() {
       </section>
       <section className='every-ringgit h-[110vh] text-white'>
               <div className="container">
-                <div className="grid grid-cols-3   pl-[100px] pt-[100px] ml-[50px]">
+                <div className="grid grid-cols-3 md:grid-cols-1 max-[520px]:grid-cols-1 lg:grid-cols-3  pl-[100px] pt-[100px] ml-[50px]  max-[520px]:pl-[0px]">
                   <div className="col p-5">
                     <h1 className='text-[35px] font-bold  pt-[150px] '>Every ringgit helps us
 fight harder.</h1>
@@ -117,20 +117,20 @@ fight harder.</h1>
       </section>
       <section id='victories' className='bg-[#000] pb-[70px]'>
               <div className="container mx-auto text-center">
-                <h1 className='text-white text-[55px] text-center font-bold pt-5'>Our victories against the haze.</h1>
-                <div className="max-[520px]:flex-col flex lg:flex-row  justify-between items-center">
+                <h1 className='text-white text-[55px]   font-bold pt-5'>Our victories against the haze.</h1>
+                <div className="max-[520px]:flex-col flex lg:flex-row gap-10 px-[5em] py-[5em] justify-between items-center">
             
-                  <div className="w-[50%] m-20 bg-[#66CC00] rounded-lg flex-grow text-start">
-                    <img className='w-[100%] object-contain'  src="col-2.png" alt="" />
-                    <div className="card-body p-7">
+                  <div className="  bg-[#66CC00] card-body  rounded-2xl text-left">
+                    <img className='object-contain rounded-2xl '  src="col-2.png" alt="" />
+                    <div className="card-body h-[19em] p-7">
                       <span className='date text-white'>2017</span>
                       <h2 className='title text-lg font-semibold text-[#064A06]'>HSBC stops funding companies that destroy Indonesian rainforests.</h2>
                       <p>We investigated and found that HSBC was linked to companies destroying Indonesia’s rainforests. Hundreds of thousands of people joined our campaign in demanding HSBC to stop funding these destructive companies. In response, HSBC introduced the ‘No Deforestation, No Peat, No Exploitation’ policy, which refuses finance for companies that clear forests and peatlands, and cut all ties with these destructive companies.</p>
                     </div>
                   </div>
-                  <div className="w-[50%]  m-20  bg-[#66CC00] rounded-lg flex-grow text-start">
-                  <img className='rounded-lg w-[100%] object-contain' src="col-1.png" alt="" />
-                    <div className="card-body p-7">
+                  <div className="bg-[#66CC00] card-body  rounded-2xl text-left">
+                  <img className='rounded-lg  object-contain' src="col-1.png" alt="" />
+                    <div className="card-body h-[20em] p-7">
                     <span className='date text-white'>2017</span>
                     <h2 className='title text-lg font-semibold text-[#064A06]'>IOI Group eliminates deforestation and exploitation from supply chain.</h2>
                     <p>To protest deforestation and exploitation of rainforests and peatlands by IOI Group, Greenpeace supporters blockaded IOI’s palm oil refinery in Rotterdam – bringing their operations to a halt. Then, we submitted a global petition signed by 300,000 people to IOI group. In response, IOI began proactively monitoring their supply chain to ensure that no suppliers were destroying rainforests or peatlands.</p>
