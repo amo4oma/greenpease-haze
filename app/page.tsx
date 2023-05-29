@@ -7,6 +7,8 @@ import Button from './components/Button'
 import Head from 'next/head'
 import { motion } from "framer-motion"
 import { fadeIn } from "./motions"
+import Cu from "./components/CuLogo"
+import Footer from './components/Footer'
 
 
 const names = ["forest.png", "ocean.png", "climate&energy.png", "food for life (1).png", "food for life (1).png", "others.png"];
@@ -23,13 +25,15 @@ export default function Home() {
 
       </Head>
       <Nav />
+      <Cu />
       <div className='hero-haze h-full pt-[100px] container overflow-hidden'>
-        <div className="flex flex-row">
-          <div className="ml-[150px]">
+        <div className="grid-container grid xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-items-center">
+          <div className="col-span-1 w-[50%]">
             <h1 className='text-[50px] font-bold w-[100%] font-noto'>Help Malaysia breathe again.</h1>
             <p>A small donation can spark a world of change in<br /> the fight against the haze.</p>
           </div>
-          <Form />
+          <div className="p-10">    <Form /></div>
+      
         </div>
  
         <div className="culprit-container container flex flex-row bg-[#66CC00] mt-[200px] mx-auto w-[80%] rounded-lg overflow-hidden p-8 text-white">
@@ -48,7 +52,7 @@ export default function Home() {
               But today, we know how to fix it – and we can’t afford not to try.</p>
           </div>
 
-          <Button title='Help Malaysia breathe again' />
+          <Button bg={'bg-[#66CC00]'} title={'Help Malaysia breathe again'} />
 
           <img className=' ' src='/3section2-01.png' />
 
@@ -105,7 +109,7 @@ fight harder.</h1>
 <p>Every day, we investigate, campaign and lobby to protect not just Malaysia; but the planet as a whole. We hold governments and corporations accountable through peaceful, direct action – and we do it all thanks to your donations. We’ll fight the good fight, but we need your support.
 
 </p>
-<Button title={'Help THE PLANET'} />
+<Button bg={'bg-[#66CC00]'} title={'Help THE PLANET'} />
                   </div>
                   <div className="col-span-4"></div>
                 </div>
@@ -133,7 +137,7 @@ fight harder.</h1>
                     </div>
                   </div>
                 </div>
-                <Button title={'Be a part of our next victory against Haze'} />
+                <Button bg={'bg-[#66CC00]'} title={'Be a part of our next victory against Haze'} />
               </div>
       </section>
                 <section id='magic'>
@@ -146,8 +150,8 @@ fight harder.</h1>
                         The seed then sprouts and grows, just like the impact of your donations on the environment.</p>
                     </div>
                     <div className="btn-container relative z-10 grid grid-cols-2 gap-20 pl-[150px] pr-[150px]">
-                      <Button title={'Become a Regular Donor today'} />
-                      <Button title={'More about the Magic Seed Pencil'} />
+                      <Button bg={'bg-[#66CC00]'} title={'Become a Regular Donor today'} />
+                      <Button bg={'bg-[#66CC00]'} title={'More about the Magic Seed Pencil'} />
                     </div>
                   </div>
 
@@ -159,7 +163,7 @@ fight harder.</h1>
                             <h1 className='text-[35px] font-bold'>We’re a small part of
 a larger movement.</h1>
 <p>Greenpeace Malaysia is a small part of a larger movement. We march alongside a global collective of passionate people who work together to hold governments and corporations accountable. We’re people-powered. We’re for the planet. We’re Greenpeace – and we need you.</p>
-                       <Button title={"HELP US FIGHT FOR THE PLANET"} />
+                       <Button bg={'bg-[#66CC00]'} title={"HELP US FIGHT FOR THE PLANET"} />
                         </div>
                         <div className="relative">
                           <img className='absolute bottom-[-90px] z-0' src="/clean-air.png" alt="clean-air.png" />
@@ -167,13 +171,7 @@ a larger movement.</h1>
                       </div>
                     </div>
                 </section>
-                <footer className='bg-[#074365] h-[50vh] relative z-10'>
-                  <div className="container mx-auto px-40 pt-10">
-                   <div className="inline-block"><img className='inline-block' src="/g.png" alt="" />
-                    <h3 className='inline-block text-white font-bold ml-9'>Greenpeace Malaysia</h3></div> 
-                    <hr className='mt-6'/>
-                  </div>
-                </footer>
+                  <Footer />
     </main>
   )
 }

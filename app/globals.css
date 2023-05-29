@@ -26,6 +26,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero-big{
+  background-image: url(/big-bg.png);
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #donation-go{
   background-image: url(/section2-01buttom1.png);
@@ -36,6 +42,12 @@ body {
 
 .every-ringgit{
   background-image: url(/section31.png);
+  background-position: 10% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#big-every-ringgit{
+  background-image: url(/s2_11.png);
   background-position: 10% 80%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,4 +67,35 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
+}
+#small-part-II{
+  background-image: url(/GP1SWNWB1.png);
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  position: relative;
+}
+#small-part-II::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+@keyframes float-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.float-up-down {
+  animation: float-up-down 2s ease-in-out infinite;
 }
